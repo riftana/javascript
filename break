@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript break</h2>
+
+<p id="demo"></p>
+
+<script>
+var n = ["o", "p", "q", "r"];
+var text = "";
+
+list: {
+  text += n[0] + "<br>"; 
+  text += n[1] + "<br>"; 
+  break list;
+  text += n[2] + "<br>"; 
+  text += n[3] + "<br>"; 
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
